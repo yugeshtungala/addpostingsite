@@ -1,0 +1,20 @@
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12  text-center" *ngFor="let bike of allbikes" >
+    <div class="mt-5 card p-1 ">
+        <img src="{{bike.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p ><small  class="card-text text-muted">posted:- {{bike.date}}</small></p>
+          <h5 class="card-title text-danger">{{bike.name}}</h5>
+          <h4 class="card-title">Rs {{bike.price}}</h4>
+          <p class="card-text">{{bike.discription}}</p>
+         
+          <p><small class="card-text">location:- {{bike.location}}</small></p>
+          <button class="btn btn-info" >Message</button>
+          <button class="btn btn-warning m-3">Report</button>
+         
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
